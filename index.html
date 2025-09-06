@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeeva M - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .project-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+        .project-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+        }
+        .section-heading {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .bg-gradient-header {
+            background-image: linear-gradient(to right, #6b21a8, #4c1d95);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-header text-white py-12 px-4 md:px-8 shadow-lg relative">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="flex items-center justify-center space-x-4 mb-2">
+                <!-- Logo with onclick event to open modal -->
+                <img src="logo.PNG" alt="Jeeva's Logo" class="w-16 h-16 rounded-full border-2 border-white cursor-pointer" onclick="openModal()">
+                <h1 class="text-4xl font-bold">Jeeva M</h1>
+            </div>
+            <p class="text-xl font-medium mb-4">Web Developer & UI/UX Designer</p>
+            <p class="text-gray-200">A passionate and dedicated professional with a solid foundation in web development and a keen eye for UI/UX design. Eager to build intuitive and user-friendly digital experiences.</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-3 px-4 md:px-8">
+        <div class="max-w-4xl mx-auto flex justify-center items-center space-x-6 text-sm md:text-base font-medium">
+            <!-- Logo in Nav Bar with onclick event to open modal -->
+            <img src="logo.PNG" alt="Jeeva's Logo" class="w-10 h-10 rounded-full border-2 border-white-300 cursor-pointer" onclick="openModal()">
+            <a href="#projects" class="text-gray-600 hover:text-purple-700 transition-colors duration-200">Projects</a>
+            <a href="#education-certifications" class="text-gray-600 hover:text-purple-700 transition-colors duration-200">Education</a>
+            <a href="#education-certifications" class="text-gray-600 hover:text-purple-700 transition-colors duration-200">Certifications</a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto py-12 px-4 md:px-8">
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-12">
+            <h2 class="text-3xl font-bold section-heading">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Web & Programming</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>PHP</li>
+                        <li>ASP.NET Web Forms</li>
+                        <li>C, Java, Python</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">UI/UX Design</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>User Interface (UI) Design</li>
+                        <li>User Experience (UX) Design</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Figma (Self-taught)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Databases & Tools</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>MySQL, SQL</li>
+                        <li>Red Hat Administration</li>
+                        <li>Git, GitHub</li>
+                        <li>Arduino IDE</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-12">
+            <h2 class="text-3xl font-bold section-heading">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- UI/UX Transaction App Project -->
+                <div class="project-card bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <div class="project-icon text-purple-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l-.879-.659a1.125 1.125 0 01-.329-.303L4.5 9.75M12 6v12m3-2.818l.879-.659c.531-.4 1.25-.119 1.25.568V18a.75.75 0 00.75.75c.571 0 1.128-.08 1.664-.236l.298-.084m-12 5.625c-.249-1.04-.5-2.081-.75-3.125m15 3.125c-.249-1.04-.5-2.081-.75-3.125M12 10.5h.008v.008H12V10.5zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Transaction App UI/UX Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Designed a clean and intuitive user interface for a mobile transaction application. Focused on improving the user flow for payments, history tracking, and security settings through wireframing and prototyping.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-2 text-sm text-purple-800">
+                        <span class="bg-purple-100 px-3 py-1 rounded-full font-medium">UI Design</span>
+                        <span class="bg-purple-100 px-3 py-1 rounded-full font-medium">Figma</span>
+                        <a href="https://jee-17.github.io/Transaction-App-UI-UX-portfolio-/" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-purple-700 transition-colors duration-200">View Live</a>
+                    </div>
+                </div>
+
+                <!-- Company Website Project -->
+                <div class="project-card bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <div class="project-icon text-purple-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3.75 0L12 3m-2.25-1.5h-.828a2.25 2.25 0 00-1.59.659l-4.633 4.634A2.25 2.25 0 002.25 9.75v6.75a2.25 2.25 0 002.25 2.25h1.5" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Company Website</h3>
+                    <p class="text-gray-600 mb-4">
+                        Designed and developed a static company website with a focus on clear information architecture and a professional user experience. Implemented a responsive design to ensure cross-device compatibility.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-2 text-sm text-purple-800">
+                        <span class="bg-purple-100 px-3 py-1 rounded-full font-medium">HTML</span>
+                        <span class="bg-purple-100 px-3 py-1 rounded-full font-medium">CSS</span>
+                        <a href="https://github.com/jee-17/company-website" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-purple-700 transition-colors duration-200">View Live</a>
+                    </div>
+                </div>
+                
+                <!-- Home Automation Project -->
+                <div class="project-card bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <div class="project-icon text-purple-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Home Automation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Engineered a prototype home automation system using a microcontroller. Programmed device control logic to demonstrate the potential for smart home applications.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-sm text-purple-800">
+                        <span class="bg-purple-100 px-3 py-1 rounded-full font-medium">C Programming</span>
+                        <span class="bg-purple-100 px-3 py-1 rounded-full font-medium">Arduino</span>
+                        <span class="bg-purple-100 px-3 py-1 rounded-full font-medium">Hardware Integration</span>
+                    </div>
+                </div>
+                
+                <!-- Weather App Project -->
+                <div class="project-card bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <div class="project-icon text-purple-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.106-1.424-.38-2.903-.642-4.385-.751m-9.75 6.643a3 0 11-.876-2.915 3 0 01.876 2.915z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Weather Dashboard</h3>
+                    <p class="text-gray-600 mb-4">
+                        Developed a web-based weather application that fetches and displays real-time weather data from an external API. Showcases proficiency in asynchronous JavaScript and API integration.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-2 text-sm text-purple-800">
+                        <span class="bg-purple-100 px-3 py-1 rounded-full font-medium">JavaScript</span>
+                        <span class="bg-purple-100 px-3 py-1 rounded-full font-medium">API Integration</span>
+                        <a href="https://jee-17.github.io/jee-17/" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-purple-700 transition-colors duration-200">View Live</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-12">
+            <h2 class="text-3xl font-bold section-heading">Experience</h2>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h3 class="text-xl font-semibold">Trainee Software Developer (Internship)</h3>
+                    <span class="text-gray-500 font-medium">June 2024 - Present</span>
+                </div>
+                <p class="text-purple-700 font-medium mb-2">Samudhra Tech Solutions, Thoothukudi</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Developed .NET Windows applications using C#.</li>
+                    <li>Learned to build web applications using ASP.NET Web Forms.</li>
+                    <li>Contributed to the full software development lifecycle from coding to testing.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education-certifications" class="mb-12">
+            <h2 class="text-3xl font-bold section-heading">Education & Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Education</h3>
+                    <ul class="text-gray-600 space-y-4">
+                        <li>
+                            <p class="font-medium">BSc in Computer Science</p>
+                            <p class="text-sm text-gray-500">Kamaraj College, Thoothukudi</p>
+                            <p class="text-sm text-gray-500">Expected Graduation: May 2025</p>
+                        </li>
+                        <li>
+                            <p class="font-medium">Higher Secondary Education</p>
+                            <p class="text-sm text-gray-500">Geetha Matriculation Higher Secondary School, Thoothukudi</p>
+                            <p class="text-sm text-gray-500">87%</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Certifications -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Certifications</h3>
+                    <ul class="text-gray-600 space-y-4">
+                        <li>
+                            <p class="font-medium">C Programming</p>
+                        </li>
+                        <li>
+                            <p class="font-medium">Java Programming</p>
+                        </li>
+                        <li>
+                            <p class="font-medium">Python with Data Science</p>
+                        </li>
+                        <li>
+                            <p class="font-medium">Red Hat System Administration</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <div class="flex justify-center space-x-4 mb-2">
+            <a href="https://www.linkedin.com/in/jeeva-mariappanlenin-99245b291" target="_blank" class="hover:text-purple-400 transition-colors">LinkedIn</a>
+            <a href="https://github.com/jee-17" target="_blank" class="hover:text-purple-400 transition-colors">GitHub</a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWstwPJvwZvXLVjZcnzNnGFZRjwMpGxlftVqnXxDmFzzxgNzhRHTvmBgDFGCCSCqRMXmwFFjb" class="hover:text-purple-400 transition-colors">Email</a>
+            <a href="tel:+919884907483" class="hover:text-purple-400 transition-colors">Phone</a>
+        </div>
+        <!-- <p>&copy; 2024 Jeeva M. All rights reserved.</p> -->
+    </footer>
+
+    <!-- Photo Modal -->
+    <div id="photo-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 hidden transition-opacity duration-300">
+        <div class="relative bg-white rounded-xl shadow-lg p-6 max-w-sm w-full">
+            <!-- Close button -->
+            <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 focus:outline-none" onclick="closeModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="text-center">
+                <!-- Large profile photo placeholder -->
+                <img id="profile-photo" src="logo.PNG" alt="Jeeva's Profile Photo" class="mx-auto rounded-full w-48 h-48 border-4 border-purple-600 object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle modal -->
+    <script>
+        const photoModal = document.getElementById('photo-modal');
+
+        function openModal() {
+            photoModal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            photoModal.style.display = 'none';
+        }
+
+        // Close the modal when clicking outside the content
+        photoModal.addEventListener('click', (event) => {
+            if (event.target === photoModal) {
+                closeModal();
+            }
+        });
+    </script>
+
+</body>
+</html>
